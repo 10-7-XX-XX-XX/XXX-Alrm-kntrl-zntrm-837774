@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Alarmstufen Steuerung</h1>
+    <button id="redButton" onclick="sendToWebhook('**Code Rot**: Wir haben zurzeit eine *schwerwiegende Situation/Lage*, wir bitten alle Mitglieder ruhe zu bewahren. Unser Team versucht die Lage zu neutralisieren! ')">Code Rot</button>
+    <button id="purpleButton" onclick="sendToWebhook('**Code Lila**: Wir haben möglicherweise potenzielle Bedrohungen festgestellt, melde alle suspekten Aktivitäten an den Gruppendienst oder den Abschirmdienst!')">Code Lila</button>
+    <button id="yellowButton" onclick="sendToWebhook('**Lockdown**: Unsere Gruppe befindet sich zum jetzigen Zeitpunkt in einem Lockdown, bedeutet wir handeln nur unauffällig.')">Lockdown</button>
+    <button id="greenButton" onclick="sendToWebhook('**Alarmstufe Neutralisiert**: Die jetzige Situation/Lage wurde neutralisiert, führe deinen Dienst normal weiter.')">Neutralisieren</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
